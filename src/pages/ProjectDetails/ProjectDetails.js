@@ -111,19 +111,19 @@ const ProjectDetails = () => {
       data-aos-duration="1500"
       className="detail-card lg:min-h-screen p-5 lg:p-40 hover:text-white"
     >
-      <div className="inside-detail flex flex-col lg:flex-row justify-center items-start gap-8  text-left mb-32">
+      <div className="inside-detail flex flex-col lg:flex-row justify-center items-start gap-8 lg:h-[70vh] text-left mb-32">
         <div className="image-detail w-full h-80 lg:w-1/2 lg:h-full rounded-xl overflow-hidden">
           <img src={project.image} alt="" />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col h-full justify-center">
           <div>
-            <h2 className="font-semibold text-sm my-4 text-secondary">
+            <h2 className="font-semibold text-sm my-2 text-secondary">
               {project.title}
             </h2>
             <h2 className="project-title text-accent font-semibold text-xl my-4">
               {project.name}
             </h2>
-            <div className="my-5">
+            <div className="my-4">
               <h3 className=" text-secondary">Project Overview</h3>
               {project?.description?.map((point, index) => (
                 <p key={index} className="text-accent">
@@ -131,7 +131,7 @@ const ProjectDetails = () => {
                 </p>
               ))}
             </div>
-            <div className="my-5">
+            {/* <div className="my-5">
               <h3 className=" text-secondary">Technology used</h3>
               <div className="flex flex-wrap gap-4">
                 {project?.technology?.map((point, index) => (
@@ -140,7 +140,7 @@ const ProjectDetails = () => {
                   </span>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="button-content flex justify-between mt-5">
             <a
